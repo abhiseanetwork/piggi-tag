@@ -2,9 +2,11 @@
     "name": "piggi-tag",
     "version": "1.0.0",
     "description": "include this npm package in your project directory for easy access of piggi network - trial version",
-    "main": "index.js",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "prepare": "npm run build"
     },
     "repository": {
         "type": "git",
@@ -23,5 +25,6 @@
     "homepage": "https://github.com/abhiseanetwork/piggi-tag#readme",
     "devDependencies": {
         "typescript": "^4.9.4"
-    }
+    },
+    "files": ["lib/**/*"]
 }
